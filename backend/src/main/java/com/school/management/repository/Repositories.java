@@ -1,0 +1,3 @@
+package com.school.management.repository;
+import org.springframework.data.jpa.repository.JpaRepository;import com.school.management.entity.*;
+public interface Repositories { interface Users extends JpaRepository<User,Long>{java.util.Optional<User> findByEmail(String email);} interface Students extends JpaRepository<Student,Long>{} interface Teachers extends JpaRepository<Teacher,Long>{} interface Subjects extends JpaRepository<Subject,Long>{} interface Attendances extends JpaRepository<Attendance,Long>{} interface Results extends JpaRepository<ExamResult,Long>{} interface Payments extends JpaRepository<FeePayment,Long>{} interface Announcements extends JpaRepository<Announcement,Long>{} }
